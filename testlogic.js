@@ -60,3 +60,43 @@ function minMax(number) {
 minMax(number);
 console.log("low= " + nilaiMin);
 console.log("high = " + nilaiMax);
+
+
+//Task 5
+let number = parseInt(prompt("Masukkan nilai: "));
+function Task5(number) {
+  let x = number;
+  for (let i = 0; i <= x; i++) {
+    if (x === 2) {
+      console.log((x = "dua"));
+    } else if (x === 20) {
+      console.log((x = "dua puluh"));
+    } else if (x === 39) {
+      console.log((x = "tiga puluh sembilan"));
+    } else if (x > 100) {
+      console.log((x = "silahkan masukkan 1-100"));
+    } else {
+      console.log(x);
+    }
+    return x;
+  }
+}
+Task5(number);
+
+//Task8
+function cekKelipatan(angka) {
+  let bilangan = "";
+  for (var i = 1; i <= angka; i++) {
+    if (i % 15 === 0) {
+      bilangan += "Eduwork" + " ";
+    } else if (i % 5 === 0) {
+      bilangan += "work" + " ";
+    } else if (i % 3 === 0) {
+      bilangan += "edu" + " ";
+    } else {
+      bilangan += i + " ";
+    }
+  }
+  return bilangan;
+}
+console.log(cekKelipatan(15));
